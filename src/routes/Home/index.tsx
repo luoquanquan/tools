@@ -36,6 +36,18 @@ const Home = () => {
           >
             ETH inputData decoder
           </Button>
+          <Button
+            target="_blank"
+            href="https://www.oklink.com/cn/eth/address/0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0/contract"
+          >
+            ERC 20 写合约
+          </Button>
+          <Button
+            target="_blank"
+            href="https://etherscan.io/token/0x95d86db27cac8e332667abbd7c6d545da3e09b48#writeContract"
+          >
+            ERC 721 写合约
+          </Button>
         </Space>
       </Card>
     </Space>
