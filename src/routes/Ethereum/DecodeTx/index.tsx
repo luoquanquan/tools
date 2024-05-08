@@ -31,7 +31,7 @@ const DecodeTx = () => {
 
   return (
     <Space direction="vertical" style={{ width: "100%" }}>
-      <h1>Decode Serialized Ethereum Tx</h1>
+      <h1>Decode Ethereum Tx</h1>
       <TextArea
         placeholder="Please enter the serialized transaction"
         autoSize={{ minRows: 3, maxRows: 5 }}
