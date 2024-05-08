@@ -1,4 +1,5 @@
 import { Button, Card, Space } from "antd";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,12 +12,10 @@ const Home = () => {
           >
             ETH inputData
           </Button>
-          <Button
-            target="_blank"
-            href="https://flightwallet.github.io/decode-eth-tx/"
-          >
-            ETH signedTx
-          </Button>
+          <Link to="/Ethereum/DecodeTx">
+            <Button>Decode Ethereum Tx</Button>
+          </Link>
+
           <Button
             target="_blank"
             href="https://www.blockchain.com/explorer/assets/btc/decode-transaction"
