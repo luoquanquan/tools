@@ -47,6 +47,10 @@ const Home = () => {
           >
             ERC 721 写合约
           </Button>
+
+          <Button target="_blank" href="https://base64.guru/">
+            Base64 工具
+          </Button>
         </Space>
       </Card>
     </Space>
