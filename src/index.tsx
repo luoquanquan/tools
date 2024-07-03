@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <HashRouter basename="tools">
+    <HashRouter>
       <App />
     </HashRouter>
   </React.StrictMode>,
