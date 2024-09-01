@@ -9,7 +9,7 @@ const ProjectInfo = ({ url = "https://github.com/luoquanquan/tools" }) => {
           {
             key: "github",
             label: "github",
-            children: <a href={url}>url</a>,
+            children: <a href={url}>{url}</a>,
           },
         ]}
       />

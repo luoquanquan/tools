@@ -4,6 +4,7 @@ import Evm from "./components/Evm";
 import Btc from "./components/Btc";
 import Ton from "./components/Ton";
 import Tools from "./components/Tools";
+import ProjectInfo from "../../components/ProjectInfo";
 
 const Home = () => {
   return (
@@ -12,6 +13,8 @@ const Home = () => {
       <Btc />
       <Ton />
       <Tools />
+
+      <ProjectInfo />
     </Space>
   );
 };

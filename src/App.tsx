@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Ethereum from "./routes/Ethereum";
-import ProjectInfo from "./components/ProjectInfo";
 
 const App = () => {
   return (
@@ -14,7 +13,6 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Home />} />
       </Routes>
-      <ProjectInfo />
     </Space>
   );
 };
