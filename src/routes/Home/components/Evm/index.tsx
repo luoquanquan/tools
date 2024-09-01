@@ -5,12 +5,9 @@ const Evm = () => {
   return (
     <Card title="Evm" style={{ width: "100%" }}>
       <Space>
-        <Button
-          target="_blank"
-          href="https://lab.miguelmota.com/ethereum-input-data-decoder/example/"
-        >
-          ETH inputData
-        </Button>
+        <Link to="/Ethereum/DecodeData">
+          <Button>Decode Data</Button>
+        </Link>
 
         <Link to="/Ethereum/DecodeTx">
           <Button>Decode Ethereum Tx</Button>
