@@ -1,7 +1,7 @@
 # Decode Ethereum Tx
 
 A JS tool to decode ethereum txs
-. Deployed at https://luoquanquan.github.io/tools/Ethereum/DecodeTx
+. Deployed at https://luoquanquan.github.io/tools/#/Ethereum/DecodeTx
 
 Example Tx:
 ```
