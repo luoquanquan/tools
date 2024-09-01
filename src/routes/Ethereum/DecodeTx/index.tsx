@@ -2,6 +2,7 @@ import { Button, Input, Space } from "antd";
 import { useCallback, useState } from "react";
 import { stripHexPrefix } from "ethereumjs-util";
 import { TransactionFactory } from "@ethereumjs/tx";
+import ProjectInfo from "../../../components/ProjectInfo";
 
 const { TextArea } = Input;
 
@@ -49,6 +50,8 @@ const DecodeTx = () => {
         value={ret}
         onChange={() => {}}
       />
+
+      <ProjectInfo url="https://github.com/luoquanquan/tools/tree/main/src/routes/Ethereum/DecodeTx" />
     </Space>
   );
 };

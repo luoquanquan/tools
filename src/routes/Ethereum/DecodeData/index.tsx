@@ -3,6 +3,7 @@ import { Button, Divider, Input, message, Space } from "antd";
 import { erc1155Abi, erc20Abi, erc721Abi } from "@evm-abis/abis";
 import { bufferToHex, stripHexPrefix } from "ethereumjs-util";
 import { AbiCoder, keccak256 } from "ethers";
+import ProjectInfo from "../../../components/ProjectInfo";
 
 const noop = () => {};
 
@@ -131,6 +132,8 @@ const DecodeData = () => {
         value={ret}
         onChange={noop}
       />
+
+      <ProjectInfo url="https://github.com/luoquanquan/tools/tree/main/src/routes/Ethereum/DecodeData" />
     </Space>
   );
 };

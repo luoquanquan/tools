@@ -1,9 +1,10 @@
+import { Space } from "antd";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Ethereum from "./routes/Ethereum";
-import { Card, Descriptions, Space } from "antd";
+import ProjectInfo from "./components/ProjectInfo";
 
 const App = () => {
   return (
@@ -13,22 +14,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Home />} />
       </Routes>
-      <Card title="Project Info">
-        <Descriptions
-          layout="vertical"
-          items={[
-            {
-              key: "github",
-              label: "github",
-              children: (
-                <a href={"https://github.com/luoquanquan/tools"}>
-                  https://github.com/luoquanquan/tools
-                </a>
-              ),
-            },
-          ]}
-        />
-      </Card>
+      <ProjectInfo />
     </Space>
   );
 };
