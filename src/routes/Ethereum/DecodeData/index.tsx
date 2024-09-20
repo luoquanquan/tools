@@ -3,8 +3,10 @@ import { Button, Divider, Input, message, Space } from "antd";
 import { erc1155Abi, erc20Abi, erc721Abi } from "@evm-abis/abis";
 import { bufferToHex, stripHexPrefix } from "ethereumjs-util";
 import { AbiCoder, keccak256 } from "ethers";
+import { useTitle } from "ahooks";
 import ProjectInfo from "../../../components/ProjectInfo";
 
+const title = "Decode Ethereum Data";
 const noop = () => {};
 
 const { TextArea } = Input;
@@ -33,6 +35,8 @@ const parseJson = (json: any) => {
 };
 
 const DecodeData = () => {
+  useTitle(title);
+
   const [ret, setRet] = useState("");
   const [abi, setAbi] = useState(parseJson(commonAbis[0].abi));
   const [data, setData] = useState(
@@ -86,7 +90,7 @@ const DecodeData = () => {
 
   return (
     <Space direction="vertical" style={{ width: "100%" }}>
-      <h1>Decode Ethereum Data</h1>
+      <h1>{title}</h1>
 
       <div>
         <Divider orientation="left" plain>
